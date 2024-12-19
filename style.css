@@ -10,37 +10,52 @@ body{
     font-weight: 400;
     font-style: normal;
     background-color: #ffffff;
-    margin: 0 48px;
+    margin: 0 3em;
 }
 header {
-    height: 80px;
+    height: 5em;
     width: 100%;
     background-color: #ffffff;
     display:flex;
     justify-content: space-between;
-    margin: 0px;
+    align-items: center;
+    margin: 0;
 
 
 }
 label.logo{
-    font-size: 42px;
+    font-size: 2.625em;
     font-weight: bold;
     color: #000000;
-    line-height: 80px;
-    padding: 0 100px 0 0;
+    line-height: 5rem;
+    /* padding: 0 6.25em 0 0; */
 }
+
+form{
+    display: none;
+}
+
+.dropdown{
+    background-color:white;
+    
+    border: none;
+    font-size: 1.7em;
+    font-weight: bold;
+}
+
+
 nav{
     flex-direction: row;
    
 }
 nav ul{
-    line-height: 80px;
+    line-height: 5em;
 }
 
 nav ul li{
     display: inline-block;
-    line-height: 80px;
-    margin:0 5px;
+    line-height: 5em;
+    margin:0 0.313em;
 }
 
 
@@ -48,14 +63,14 @@ nav ul li{
 
 nav ul li a{
     color: #000000;
-    font-size: 28px;
-    margin: 0 5px;
+    font-size: 1.75em;
+    margin: 0 0.313em;
     
 }
 
 main{
     width: 100%;
-    height: 1152px;
+    height: 72em;
 }
 
 .heading{
@@ -65,43 +80,46 @@ main{
     height: auto;
     justify-content: center;
     align-items: center;
-    padding-top: 96px;
+    padding-top: 4em;
+    width: 100%;
 }
 
 h1{
-    font-size: 120px;
+    font-size: 7.5em;
     color: #000000;
     font-weight: bold;
-    line-height: 120px;
+    /* line-height: 2em; */
 
 
 }
 .hero_image img{
     width: 100%;
-    padding: 48px 0 96px 0;
+    padding: 3em 0 6em 0;
 }
 
 section{
     display: flex;
-    gap: 48px;
+    flex-wrap: wrap;
+    gap: 3em;
+    justify-content: center;
 }
 
 .project_section{
-    padding: 48px 0;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
+    padding: 3em 0;
+    border-top: 0.063em solid black;
+    border-bottom: 0.063em solid black;
 }
 
 .project_section h2{
-    padding-bottom: 24px;
-    line-height: 40px;
-    font-size: 34px;
+    padding-bottom: 1.5em;
+    line-height: 2.5em;
+    font-size: 2.125em;
 }
 
 .item h2{
     color: #000000;
-    font-size: 20px;
-    padding: 12px 0;
+    font-size:1.25em ;
+    padding: 0.75em 0;
     font-weight: 400;
 }
 .item p{
@@ -110,14 +128,14 @@ section{
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    padding-bottom: 24px;
+    padding-bottom: 1.5em;
 }
 
 .item button{
     background-color: black;
-    padding: 8px 16px;
+    padding: 0.5em 1em;
     color: white;
-    border-radius: 8px;
+    border-radius: 0.5em;
     font-family: "Roboto Mono", monospace;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -128,23 +146,24 @@ about{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 48px;
-    padding-bottom: 254px;
+    gap: 3em;
+    padding-bottom: 15.875em;
 }
 
 
 about h3{
     color: #000000;
-    font-size: 64px;
+    font-size: 4em;
     text-align: center;
-    padding: 96px 222px 16px 222px;
+    /* padding: 6em 13.875em 1em 13.875em; */
+   
     font-weight: 400;
-    line-height: 68px;
+    line-height: 4.25em;
 }
 
 about p{
     color: #000000;
-    font-size: 24px;
+    font-size: 1.5em;
     text-align: center;
     /* padding: 96px 222px; */
     font-weight: lighter;
@@ -159,14 +178,24 @@ about p{
 
 about button{
     background-color: black;
-    padding: 12px 24px;
+    padding: 0.75em 1.5em;
     color: white;
-    border-radius: 8px;
+    border-radius: 0.5em;
     font-family: "Roboto Mono", monospace;
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
     width: auto;
-    font-size: 20px;
+    font-size: 1.25em;
 
+}
+
+@media(max-width:650px){
+    form{
+        display: inline;
+    }
+
+    nav{
+        display: none;
+    }
 }
