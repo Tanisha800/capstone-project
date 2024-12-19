@@ -189,6 +189,51 @@ about button{
     font-size: 1.25em;
 
 }
+footer{
+    height: 8%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+
+footer>.water-mark{
+    color: black;
+    
+    font-size: 1.75rem;
+    margin-left: 2rem;
+    
+}
+
+footer>.follow>input{
+    
+    color: black;
+    border: 1px solid black;
+    padding: 0.5rem;
+    border-radius: 0.35rem;
+    background-color: #ffffff;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    width: auto;
+    font-size: 1.25em;
+    transition-duration: 0.5s;
+
+    cursor: pointer;
+    margin-right: 2rem;
+    padding: 0.5rem 1rem;
+    font-size: 1.25rem;
+
+}
+
+.follow>input:hover{
+    transform: scale(1.1);
+}
+
+
 
 @media(max-width:650px){
     form{
